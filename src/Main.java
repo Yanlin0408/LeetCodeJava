@@ -469,11 +469,125 @@ public class Main {
 
         binarySearch2 shiyan = new binarySearch2();
         System.out.println("答案是"+shiyan.binarySearch222(caobicaobi,ansswer));
+
+        double firfir = 1063376696;
+        double secsec = 2126753390;
+        System.out.println((firfir+secsec)/2);
+
+        double thirthir = (firfir+secsec)/2;
+        System.out.println(thirthir);
+        Double thirthir1 = new Double(thirthir);
+        int caobiii = thirthir1.intValue();
+
+        double caocaobi = (firfir+secsec)/2;
+        int thirthir2 = (int) caocaobi;
+        System.out.println("    "+caobiii);
+        System.out.println("    "+thirthir2);
+        System.out.println(calculator(2126753390,1063376696));
+
+
+        int[] caosaobi = new int[] {34,45,57,78,1,2,3,4,5,6,7,8,9};
+        int[] caosaobi2 = Arrays.copyOf(caosaobi,caosaobi.length);
+        Arrays.sort(caosaobi2);
+        System.out.println(Arrays.toString(caosaobi));
+        System.out.println(Arrays.toString(caosaobi2));
+
+        System.out.println(Arrays.binarySearch(caosaobi2,57));
+
+        searchInRotatedSortedArray2 searchInRotatedSortedArray2Instance = new searchInRotatedSortedArray2();
+        int posi = searchInRotatedSortedArray2Instance.searchInRotatedSortedArray2(caosaobi,57);
+        System.out.println(posi);
+
+
+        List<String> firST = new ArrayList<>();
+        List<String> secST = new ArrayList<>(Arrays.asList("233","uuuu","111","2ge","dfg434","9111dfg"));
+
+
+        HashMap<String,List<String>> xiaobi = new HashMap<>();
+        xiaobi.put("shabi",secST);
+
+        xiaobi.get("shabi").add(null);
+        xiaobi.get("shabi").add("ooooooo");
+        System.out.println(xiaobi.get("shabi"));
+        System.out.println(xiaobi.get("shabi").get(2));
+
+        Dog sisy = new Dog("sisyyy",18);
+        sisy.spark();
+        System.out.println(sisy.age);
+
+
+        System.out.println(Arrays.toString(caosaobi));
+        testament(caosaobi);
+        System.out.println(Arrays.toString(caosaobi));
+
+
+        int[][] directions = new int[][] {{1,0},{0,1},{-1,0},{0,-1}};
+        int[]  dididi = {1,2,3,4,4,7};
+        System.out.println(Arrays.toString(directions[2]));
+
+        ArrayList<Integer> caob = new ArrayList<>();
+        caob.add(1);
+        caob.add(2);
+        caob.add(3);
+        caob.add(4);
+        caob.add(5);
+
+        System.out.println(caob.toString());
+
+        caob.remove(0);
+        System.out.println(caob.toString());
+        System.out.println(caob.contains(4));
+
+        HashSet<int[]> shishenme = new HashSet<>();
+        shishenme.add(new int[]{2,3,4});
+        shishenme.add(new int[]{3,3,4});
+        shishenme.add(new int[]{4,3,4});
+        shishenme.add(new int[]{5,3,4});
+        System.out.println(shishenme.toString());
+
+        System.out.println(shishenme.contains(new int[]{2,3,4}));
+
+        for(int[] ji:shishenme){
+            System.out.println(Arrays.toString(ji));
+        }
+
+
+
+        int[] caopi = new int[]{2,3,4};
+        int[] caopi2 = new int[]{2,3,4};
+
+        System.out.println(Arrays.equals(caopi,caopi2));
+
+
+
+
+
+
+
+        int[] aaaaa = new int[] { 0, 0 };
+        HashSet<int[]> set = new HashSet<>();
+        set.add(aaaaa);
+
+        int[] b = new int[] { 0, 0 };
+
+        boolean contains = set.stream().anyMatch(c -> Arrays.equals(c, new int[]{0,0}));
+
+        System.out.println("Contains? " + contains);
     }
 
-//    public static int fuckBitch(){
-//
-//    }
+    public static void testament(int[] sb){
+        sb[0] = 666;
+        sb[1] = 666;
+    }
+
+    public static int calculator(int fir, int sec){
+        BigInteger firBig = new BigInteger(String.valueOf(fir));
+        BigInteger secBig = new BigInteger(String.valueOf(sec));
+        BigInteger sum = firBig.add(secBig);
+        BigInteger ans = sum.divide(new BigInteger(String.valueOf("2")));
+        System.out.println(ans);
+        return ans.intValue();
+    }
 
     public static String removeNonAlphanumeric(String str)
     {
@@ -512,3 +626,4 @@ public class Main {
     }
 
 }
+
